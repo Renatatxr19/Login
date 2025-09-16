@@ -3,8 +3,8 @@
 ### Descrição
 Estes projetos consistem na criação de dois sites de login. O primeiro, que é a atividade inicial, possui um login simples, utilizando apenas o e-mail e a senha. Já o segundo, que é a atividade avaliativa, apresenta um login mais elaborado, que requer matrícula, senha e cargo para acesso.
 
-###Atividade Inicial
-####Funcionalidades:
+==Atividade Inicial
+Funcionalidades:
 *Tela de Login:*
 -Campos para inserir e-mail e senha.
 -Botão para enviar os dados e realizar a autenticação.
