@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Login Profissional de Saúde</title>
+</head>
+<body>
+  <div class="card">
+    <form id="loginForm">
+      <h1>Login Profissional de Saúde</h1>
+     <b> <label for="matricula">Matrícula:</label></b>
+      <input type="text" id="matricula" name="matricula" required placeholder="Digite sua matrícula" />
+      <br /><br />
+    <b><label for="senha">Senha:</label></b>
+      <input type="password" id="senha" name="senha" required placeholder="Digite sua senha" />
+      <br /><br />
+    <b> <label for="cargo">Cargo:</label></b>
+      <select id="cargo" name="cargo" required>
+        <option value="" disabled selected>Selecione seu cargo</option>
+        <option value="Medicina">Médico</option>
+        <option value="Enfermagem">Enfermeiro</option>
+        <option value="Odontologia">Farmacêutico</option>
+        <option value="Outras">Outros...</option>
+      </select>
+      <br /><br />
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Login com sucesso');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
